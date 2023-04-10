@@ -4,127 +4,128 @@
     box-sizing: border-box;
 }
 body{
-    background-color:hsl(210, 46%, 95%);
+    background-color:rgb(211, 211, 247);
 }
-.container{
-    margin: auto;
+
+.cards{
     width: 80%;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-.boxes{
+    margin-left: auto;
+    margin-right:auto;
     display:grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "a a b c"
-        "d e e c";
-    box-shadow: 20px 20px 20px #d9e1ec;     
+        "d e e c";     
 }
-.box{
-    height: 380px; 
-    border-radius: 10px;
+.card{
+    border-radius:10px;
+    padding-right:23px; 
+    padding-left: 33px;
+    padding-top: 22px; 
 }
-.box:first-child{
+
+.card:first-child{
     grid-area: a;
-    background-color: hsl(263, 55%, 52%);
-    position: relative;
-    background-image: url(./Images/bg-pattern-quotation.svg);
-    background-repeat: no-repeat;
-    background-position: 400px 5px; 
-}
-.box:nth-child(2){
-    grid-area: b;
-    background-color: hsl(217, 19%, 35%);
-}
-.box:nth-child(3){
-    grid-area: c;
-    height: 790px;
-    background-color: white;
-}
-.box:nth-child(4){
-    grid-area: d;
-    background-color: white;
-}
-.box:nth-child(5){
-    grid-area: e;
-    background-color: hsl(219, 29%, 14%);
+    background-color:blueviolet;
+    height:340px; 
+    margin-top:30%;   
 }
 
-.box_content{
-    margin:35px;
-    /* width: 86%; */
-    margin-top: 20px;
-    line-height: 25px;
-    
-       
-
-}
-.box_image{
-    border-radius: 50%;
-    border: 3px solid;
-    height: 50px;
-    width: 50px;
-    
-}
-.box1{
-    border-color: hsl(263, 69%, 66%);
-    background-image: url(./Images/image-daniel.jpg);
-    background-position: center;
-    
-}
-.box1_content{
-    color: white;
-}
-.box_header{
-    display:flex;
-    gap:10px;
-     
-}
-.box_title{
-    margin-top: 2px;
-    margin-bottom: 15px;
-}
-.name_desc{
-    opacity: 50%;
-}
-
-.box_info{
-    font-size: 20px;
-}
-
-.detailed_info{
-    opacity: 70%;
-    line-height: 24px;
-    margin-top: 20px;
-}
-
-.box2{
-    border-color: rgb(173, 173, 173);
-    background-image: url(./Images/image-jonathan.jpg);
-    background-position: center;
-    
-}
-
-.box3{
-    border-color: white;
-    background-image: url(./Images/image-kira.jpg);
-    background-position: center;
-    
-}
-.box4{
-    border-color: white;
-    background-image: url(./Images/image-jeanette.jpg);
-    background-position: center;
-    
-}
-
-.box5{
-    border-color:  hsl(263, 55%, 52%);
-    background-image: url(./Images/image-patrick.jpg);
-    background-position: center;
+.card:nth-child(2){
  
+    grid-area: b;
+    background-color:gray;
+    margin-top:64%;
+    height: 333px;
 }
-.box5_content{
+
+.card:nth-child(3){
+ 
+    grid-area: c;
+    background-color: whitesmoke;
+    height: 700px;
+    margin-top:64%;  
+}
+
+.card:nth-child(4){
+    grid-area: d;
+    background-color: whitesmoke;
+    height: 297px;  
+    margin-bottom:50%;
+}
+
+.card:nth-child(5){
+    grid-area: e;
+    background-color: hsl(240, 1%, 36%);
+    height: 297px;  
+}
+
+img{
+    border-radius: 50%;  
+}
+
+h2{
+color:white;
+margin-top:31px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 22px;
+opacity: 0.8;
+}
+
+p{
     color:white;
+    margin-top:21px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    opacity: 0.6;  
 }
+
+.clib{
+    color:white;
+    margin-top:-51px;
+    padding-left:75px;   
+}
+.writ{
+    color:white;
+    padding-left:75px;
+    opacity:0.5;
+}
+
+.gradi{
+   
+    opacity:0.4;
+}
+
+.clib1{
+    color:black;
+    margin-top:-51px;
+    padding-left:75px;    
+}
+
+.writ1{
+    color:black;
+    padding-left:75px;
+    opacity:0.5;
+}
+
+.text{
+    color:black;
+    font-size:14px;
+    opacity: 0.5;
+    
+}
+
+h3{
+    color:black;
+    margin-top:25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    opacity: 0.9;
+}
+
+
+
+
+
